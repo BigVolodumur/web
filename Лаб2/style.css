@@ -1,0 +1,102 @@
+body {
+	width: 940px;
+	margin: 0 auto;
+	background-image: url(img/FON.jpg);
+	font-family: 'Pangolin', cursive;
+	letter-spacing: 1.5px;	
+}
+.menu ul {
+	list-style: none;
+	margin: 0 ;
+	padding-left: 0;
+	overflow: hidden;
+}
+.menu a {
+	display: block;
+	text-decoration: none;
+	padding: 1em;
+	background-color: #2b2c32;
+	border-right: 1px solid white; 
+	color: white;
+	
+}
+.menu {
+	position: fixed;
+	z-index: 30;
+	display: block;
+}
+.menu li {
+	float: left;
+}
+.menu a:hover {
+	background-color: gray;
+} 
+nav ul ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+nav ul li:hover > ul {
+	display: inherit;
+}
+nav ul ul li {
+	display: list-item;
+	position: relative;
+	background-color: #2b2c32;
+	min-width: 210px;
+}
+h1,h2 {
+	text-align: center;
+	color: white;
+}
+.slaid {
+    width: 940px;
+    height: 350px;
+    padding-top:0px;
+     
+ }
+
+p {
+	width: 940px;
+	color: white;
+}
+.logo1 {
+	width: 150px;
+	padding-left: 5em;
+	padding-right: 5em;
+}
+.lastwin {
+	margin: 0 auto;
+	color: white;
+
+}
+content {
+	margin: 800 auto;
+	
+}
+
+.footer {
+	width: 940px;
+	
+}
+.footer_text {
+	text-align: center;
+	color: white;
+	margin-top: -2.5%; 
+	position: absolute;
+}
+
+.head_text {
+	top: 50px;
+	letter-spacing: 1px;
+}
+.round {
+	float: right;
+    border-radius: 30px;
+ }
+
+
+
+
+
+
