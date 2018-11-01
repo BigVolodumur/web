@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html manifest="manifest">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<title>Українські отамани</title>
+</head>
+
+<body style="font-size: 175%">
+ 
+ <nav class=" navbar navbar-default navbar-fixed-top  container " role="navigation" >
+	<div class="container" >
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	            <span class="sr-only">Навигация</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            </button>
+	        <a class="navbar-brand" href="index.html"><b>Усик</b></a>
+	    </div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <ul class="nav navbar-nav">
+		        <li><a href="index.html">Main</a></li>
+		        <li class="dropdown">
+		        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<b class="caret"></b></a>
+		        <ul class="dropdown-menu">
+		            <li><a href="#">Calendar of Mathes</a></li>
+		            <li><a href="#">Next game</a></li>
+		            <li><a href="#">Ratings</a></li>
+		        </ul>
+		          </li>
+		          <li><a href="news.html">News</a></li>
+		          <li><a href="fans.html">Fans</a></li>
+		          <li><a href="contacts.html">Contacs</a></li>
+		          <li><a href="admin.html">Admin</a></li>
+		    </ul>
+		    <img src="img/logo.png" alt="logo" style="float: right;" width="95px">
+		</div>
+	</div>
+	</nav>
+	<div class="container">
+		<br>
+		<br>
+		<br>
+		<h1 class="text-center">Річний календар матчів</h1>
+		<br>
+		<br>
+		<br>
+		<table class="table table-hover" >
+			<tr >
+				<th class="text-center">Дата матчу</th>
+				<th class="text-center">Місце проведення</th>
+				<th class="text-center">Суперник</th>
+			</tr>
+			<tr>
+				<td class="text-center">10 листопада 2018</td>
+				<td class="text-center">Лондон</td>
+				<td class="text-center">Тоні Бельюі</td>
+			</tr>
+			<tr>
+				<td class="text-center">21 липня 2018</td>
+				<td class="text-center">Москва</td>
+				<td class="text-center">Мурато Гассієв</td>
+			</tr>
+			<tr>
+				<td class="text-center">27 січня 2018</td>
+				<td class="text-center">Рига</td>
+				<td class="text-center">Майріс Брієдіс</td>
+			</tr>
+			
+		</table>
+	</div>
+	<footer class="container">
+		<img src="img/footer.png" alt="footer" class="footer" style="width: 100%">
+	</footer>
+	<script src="jquery-3.3.1.min.js"></script>
+  	<script src="bootstrap.min.js"></script>
+  	<script>jQuery('ul.nav > li').hover(function() { jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(); }, function() { jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(); })</script>
+
+</body>
+
+</html>

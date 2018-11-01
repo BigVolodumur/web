@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html manifest="manifest">
+<html lang="en">
+<head>
+	<title>Олександр Усик</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script src="function.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+	
+
+</head>
+
+<body style="font-size: 175%">
+	 <nav class=" navbar navbar-default navbar-fixed-top  container " role="navigation"  >
+	<div class="container" >
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	            <span class="sr-only">Навигация</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            </button>
+	        <a class="navbar-brand" href="index.html"><b>Усик</b></a>
+	    </div>
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+	    <ul class="nav navbar-nav">
+	        <li><a href="index.html">Main</a></li>
+	        <li class="dropdown">
+	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches<b class="caret"></b></a>
+	        <ul class="dropdown-menu">
+	            <li><a href="Calendar of matches1.html">Calendar of Mathes</a></li>
+	            <li><a href="#">Next game</a></li>
+	            <li><a href="#">Ratings</a></li>
+	        </ul>
+	          </li>
+	          <li><a href="news.html">News</a></li>
+	          <li><a href="fans.html">Fans</a></li>
+	          <li><a href="contacts.html">Contacs</a></li>
+	          <li><a href="admin.html">Admin</a></li>
+	    </ul>
+	    <img src="img/logo.png" alt="logo" style="float: right;" width="95px">
+	</nav>
+<main class="container">
+	
+	<h1 class="text-center">Add news</h1><br><br>
+
+	<div class="row">
+		
+		<div class="col-md-7">
+			<img src="img/empty.jpg" class="img-responsive" alt="image-icon" width="450px">
+		</div>
+		
+		<div class="col-md-5"><br>
+			<button type="button" class="btn btn-default pull-left">Add image</button>
+		</div>
+
+	</div>
+
+	<br>
+
+	<div class="row">
+		
+		<div class="col-md-7">
+			<textarea class="form-control" rows="1" placeholder="News title" id="News_title"></textarea>
+			<br>
+			<textarea class="form-control" rows="6" placeholder="News text" id="News_text"></textarea>
+		</div>
+		
+		<div class="col-md-5"><br>
+			<button type="button" class="btn btn-default pull-left" id="News_add">Додати новину</button>
+		</div>
+
+	</div>	
+			
+</main>
+
+	<footer class="container">
+		<img src="img/footer.png" alt="footer" class="footer" style="width: 100%">
+	</footer>
+	<div id="news-field" style="display: none;">
+	
+</div>
+
+	<script src="jquery-3.3.1.min.js"></script>
+  	<script src="bootstrap.min.js"></script>
+  	<script>jQuery('ul.nav > li').hover(function() { jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(); }, function() { jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(); })</script>
+
+
+<script type="text/javascript">
+	
+	let newss = [];
+	loadNewss();
+
+	document.getElementById('News_add').onclick = function(){
+    let commentTitle = document.getElementById('News_title');
+    let commentText = document.getElementById('News_text');
+
+    let news = {
+        Title : commentTitle.value,
+        Text : commentText.value,
+        
+    }
+
+	if (commentTitle.value =='') { alert("Заповніть поле заголовку");} 
+	else if (commentTitle.value == 0 ) { alert("Заголовок не може містити пробіли");} 
+	else if (commentText.value =='') { alert("Заповніть поле тексту новин");} 
+	else if (commentText.value == 0 ) { alert("Поле новин не може містити пробіли");} else {
+
+    commentTitle.value = '';
+    commentText.value = '';
+
+    newss.push(news);
+    saveNews();
+    showNewss();
+	};
+}
+	</script>
+  	
+
+</body>
+</html>
