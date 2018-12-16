@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Українські отамани</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="./index.html">Main</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="./news.html">News</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="./competitions.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Competitions
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./competitions.html">Calendar</a>
+                </div>
+              </li>
+              <a class="nav-item nav-link" href="./fans.html">Fans</a>
+              <a class="nav-item nav-link" href="./contacts.html">Contacts</a>
+              <a class="nav-item nav-link" href="./admin.html">Admin</a>
+            </div>
+          </div>
+          <div class="form-inline my-2 my-lg-0">
+              <div class="logo"></div>
+          </div>
+        </nav>
+    </header>
+    <content>
+        <h1 class="text-center">Competitions calendar</h1>
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <h1 class="text-center">Річний календар матчів</h1>
+    <br>
+    <br>
+    <br>
+    <table class="table table-hover" >
+      <tr >
+        <th class="text-center">Дата матчу</th>
+        <th class="text-center">Місце проведення</th>
+        <th class="text-center">Суперник</th>
+      </tr>
+      <tr>
+        <td class="text-center">10 листопада 2018</td>
+        <td class="text-center">Лондон</td>
+        <td class="text-center">Тоні Бельюі</td>
+      </tr>
+      <tr>
+        <td class="text-center">21 липня 2018</td>
+        <td class="text-center">Москва</td>
+        <td class="text-center">Мурато Гассієв</td>
+      </tr>
+      <tr>
+        <td class="text-center">27 січня 2018</td>
+        <td class="text-center">Рига</td>
+        <td class="text-center">Майріс Брієдіс</td>
+      </tr>
+      
+    </table>
+  </div>
+    </content>
+  <footer class="container">
+    <img src="img/footer.png" alt="footer" class="footer" style="width: 100%">
+  </footer>
+  <script src="jquery-3.3.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script>jQuery('ul.nav > li').hover(function() { jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(); }, function() { jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(); })</script>
+</body>
+</html>
